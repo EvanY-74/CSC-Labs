@@ -30,5 +30,7 @@ public class Main {
         System.out.println("Nickels: " + nickels);
 
         System.out.println("Pennies: " + cents);
+
+        scanner.close();
     }
 }

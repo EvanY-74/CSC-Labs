@@ -22,5 +22,7 @@ public class Sample {
         // String name = getInput("What's your name? ");
         // int age = getIntInput("What's your age? ");
         // System.out.println("Hello " + name + ", you are " + age + " years old.");
+        
+        scanner.close();
     }
 }
