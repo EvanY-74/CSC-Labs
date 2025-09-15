@@ -24,11 +24,18 @@ public class NumberManipulator {
 
         // BONUS:
         // Cast the number to an int and print the character it represents
-        // Add 1 to that number and print the next character
-        // Format a summary table using formatted output
         char character = (char)number;
         System.out.println("char version: " + character);
+
+        // Add 1 to that number and print the next character
         System.out.println("char + 1: " + (++character));
+
+        // Format a summary table using formatted output
+        System.out.printf("  ceil | %d\n", (int)Math.ceil(number));
+        System.out.printf(" floor | %d\n", (int)Math.floor(number));
+        System.out.printf("  rint | %d\n", (int)Math.rint(number));
+        System.out.printf(" round | %d\n", (int)Math.round(number));
+        System.out.printf("(char) | %c\n", (char)(number));
 
         input.close();
     }
