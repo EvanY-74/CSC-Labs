@@ -32,10 +32,14 @@ public class StringAnalyzer {
 
         // Determine if it is a letter, digit, or neither
         // If it's a letter, check if it's uppercase or lowercase
-        // Print the decimal code of the character
         if (Character.isLetter(character)) {
             System.out.println(character + " is " + (Character.isUpperCase(character) ? "upper" : "lower") + " case.");
-        } else System.out.println("Decimal code of " + character + ": " + (short)character);
+        } else if (Character.isDigit(character)) System.out.println(character + " is a digit.");
+        else System.out.println(character + " is neither a letter nor digit.");
+
+        // Print the decimal code of the character
+        System.out.println("Decimal code of " + character + ": " + (short)character);
+
 
         // BONUS:
         // Prompt the user for a substring to search for
