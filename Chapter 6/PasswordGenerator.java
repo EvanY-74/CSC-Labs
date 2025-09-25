@@ -24,7 +24,6 @@ public class PasswordGenerator {
     // 4. A random special character from: !@#$%^&*
     public static char getRandomSpecial() {
         String SPECIAL_CHARACTERS = "!@#$%^&*";
-        // System.out.println(randomInt(0, 7) + SPECIAL_CHARACTERS.length);
         return SPECIAL_CHARACTERS.charAt(randomInt(0, SPECIAL_CHARACTERS.length() - 1));
     }
 
