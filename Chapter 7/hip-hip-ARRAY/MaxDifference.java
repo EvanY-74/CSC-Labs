@@ -37,10 +37,14 @@ public class MaxDifference {
         return result;
     }
 
+    public static int maxDifference(int[] integers) {
+        return max(integers) - min(integers);
+    }
+
     public static void main(String[] args) {
         int[] integers = splitIntegers(getInput("Enter numbers:\n"));
 
-        System.out.println("Maximum difference: " + (max(integers) - min(integers)));
+        System.out.println("Maximum difference: " + maxDifference(integers));
 
         scanner.close();
     }
