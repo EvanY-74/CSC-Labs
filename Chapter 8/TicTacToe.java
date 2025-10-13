@@ -67,11 +67,12 @@ public class TicTacToe {
         }
     }
 
-    // TODO 5: Complete this method
+    //  TODO 5: Complete this method
     // Purpose: Place the player's mark on the board if the space is empty.
     // Return true if successful, or false if the move is invalid.
     public static boolean placeMark(int row, int col, char mark) {
         if (row < 0 || 2 < row || col < 0 || 2 < col) return false;
+        if (board[row][col] != ' ') return false;
         board[row][col] = mark;
         return true;
     }
