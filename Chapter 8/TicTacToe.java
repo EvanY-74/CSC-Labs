@@ -87,7 +87,7 @@ public class TicTacToe {
             // check columns
             if (board[0][i] == mark && board[1][i] == mark && board[2][i] == mark) return true;
         }
-        // diagonals
+        // check diagonals
         if (board[0][0] == mark && board[1][1] == mark && board[2][2] == mark) return true;
         if (board[0][2] == mark && board[1][1] == mark && board[2][0] == mark) return true;
 
