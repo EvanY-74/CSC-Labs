@@ -18,4 +18,14 @@ public class DanceRoutine {
     public String modifyRoutine() {
         return this.buildRoutine().replace("performs", "dances to");
     }
+
+    public String remixRoutine() {
+        StringBuilder builtRoutine = new StringBuilder(this.buildRoutine());
+        builtRoutine.insert(0, "--- REMIX ---\n");
+        builtRoutine.deleteCharAt(builtRoutine.length() - 1);
+        // builtRoutine.delete(builtRoutine.length() - 1, builtRoutine.length());
+        builtRoutine.append("\n(Backwards Boohbah Shuffle!)");
+        builtRoutine.reverse();
+        return builtRoutine.toString();
+    }
 }
